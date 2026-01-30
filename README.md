@@ -28,10 +28,7 @@ def load_json_by_search(base_folder, filename):
         return json.load(f)
 
 
-# ---------------- MAIN ----------------
 
-# ⭐ YAHAN SIRF APNA Instagram export wala folder do
-# Example: D:\Instagram_Data
 BASE_FOLDER = "D:\"
 
 FILENAME = "recently_unfollowed_profiles.json"
@@ -78,10 +75,7 @@ def load_json_by_search(base_folder, filename):
         return json.load(f)
 
 
-# ---------------- MAIN ----------------
 
-# ⭐ YAHAN SIRF APNA Instagram export wala folder do
-# Example: D:\Instagram_Data
 BASE_FOLDER = "D:\"
 
 FILENAME = "recently_unfollowed_profiles.json"
