@@ -18,11 +18,11 @@ def load_json_by_search(base_folder, filename):
     file_path = find_file_anywhere(base_folder, filename)
 
     if not file_path:
-        print(f"❌ File not found: {filename}")
-        print("👉 Tip: BASE_FOLDER galat hai ya file exist nahi karti.")
+        print(f" File not found: {filename}")
+        print(" Tip: BASE_FOLDER galat hai ya file exist nahi karti.")
         return None
 
-    print(f"✅ Found file: {file_path}")
+    print(f" Found file: {file_path}")
 
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -36,10 +36,10 @@ FILENAME = "recently_unfollowed_profiles.json"
 data = load_json_by_search(BASE_FOLDER, FILENAME)
 
 if data:
-    print("✅ Loaded Successfully!")
+    print(" Loaded Successfully!")
     users = data.get("relationships_unfollowed_users", [])
 
-    print(f"\n📌 Total Recently Unfollowed: {len(users)}\n")
+    print(f"\n Total Recently Unfollowed: {len(users)}\n")
 
     for i, u in enumerate(users[:20], start=1):
         try:
@@ -65,11 +65,11 @@ def load_json_by_search(base_folder, filename):
     file_path = find_file_anywhere(base_folder, filename)
 
     if not file_path:
-        print(f"❌ File not found: {filename}")
-        print("👉 Tip: BASE_FOLDER galat hai ya file exist nahi karti.")
+        print(f" File not found: {filename}")
+        print(" Tip: BASE_FOLDER galat hai ya file exist nahi karti.")
         return None
 
-    print(f"✅ Found file: {file_path}")
+    print(f" Found file: {file_path}")
 
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -83,10 +83,10 @@ FILENAME = "recently_unfollowed_profiles.json"
 data = load_json_by_search(BASE_FOLDER, FILENAME)
 
 if data:
-    print("✅ Loaded Successfully!")
+    print(" Loaded Successfully!")
     users = data.get("relationships_unfollowed_users", [])
 
-    print(f"\n📌 Total Recently Unfollowed: {len(users)}\n")
+    print(f"\n Total Recently Unfollowed: {len(users)}\n")
 
     for i, u in enumerate(users[:20], start=1):
         try:
